@@ -6,12 +6,12 @@
   "publisher": "your-publisher-name",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/markdown-format-checker.git"
+    "url": "https://github.com/neuvecom/markdown-format-checker.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/markdown-format-checker/issues"
+    "url": "https://github.com/neuvecom/markdown-format-checker/issues"
   },
-  "homepage": "https://github.com/your-username/markdown-format-checker#readme",
+  "homepage": "https://github.com/neuvecom/markdown-format-checker#readme",
   "license": "MIT",
   "engines": {
     "vscode": "^1.101.0"
