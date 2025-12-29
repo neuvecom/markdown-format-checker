@@ -7,6 +7,8 @@
   <meta name="keywords" content="VS Code, Markdown, 拡張機能, フォーマットチェッカー, テーブル">
   <title>Markdown Format Checker - VS Code拡張機能</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="neuvecom-common/css/affiliate.css">
+  <link rel="stylesheet" href="neuvecom-common/css/fallback.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -32,6 +34,13 @@
       </div>
     </div>
   </header>
+
+  <!-- 広告バナー -->
+  <div class="ad-banner-wrapper">
+    <div class="container">
+      <div id="header-ad-banner"></div>
+    </div>
+  </div>
 
   <main>
     <section class="hero">
@@ -297,5 +306,26 @@ npm install<br>
       </div>
     </div>
   </footer>
+
+  <!-- 広告バナースクリプト -->
+  <script src="neuvecom-common/js/affiliate-lite.js"></script>
+  <script src="neuvecom-common/js/adblock-detector.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // 広告バナーマネージャーを初期化
+      const bannerManager = new NeuvecomAffiliateBanner({
+        sid: '3757792',
+        storageKeyPrefix: 'markdown-format-checker',
+        configPath: '/data/affiliates.yaml',
+        fallbackImagesPath: '/img/'
+      });
+
+      // ヘッダー下バナーを表示
+      const headerAdContainer = document.getElementById('header-ad-banner');
+      if (headerAdContainer) {
+        bannerManager.render(headerAdContainer, 'header');
+      }
+    });
+  </script>
 </body>
 </html>

@@ -24,6 +24,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          submodules: true
+          token: ${{ secrets.SUBMODULE_PAT }}
+
+      - name: Prepare docs directory
+        run: |
+          # neuvecom-common用ディレクトリを作成
+          mkdir -p docs/neuvecom-common
+          # neuvecom-commonをdocs配下にコピー（静的ファイル用）
+          cp -r neuvecom-common/js docs/neuvecom-common/
+          cp -r neuvecom-common/css docs/neuvecom-common/
+          cp -r neuvecom-common/img docs/neuvecom-common/
+          # dataディレクトリをdocs配下にコピー
+          cp -r data docs/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

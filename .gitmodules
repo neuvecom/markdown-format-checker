@@ -1,0 +1,3 @@
+[submodule "neuvecom-common"]
+	path = neuvecom-common
+	url = https://github.com/neuvecom/neuvecom-common.git
