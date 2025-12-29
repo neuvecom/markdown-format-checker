@@ -143,26 +143,26 @@ body {
 }
 
 /* ========================================
-   広告バナー
+   スポンサーセクション
    ======================================== */
-.ad-banner-wrapper {
+.sponsor-section {
   padding: var(--spacing-md) 0;
   background-color: var(--color-bg-secondary);
   border-bottom: 1px solid var(--color-border);
 }
 
-.ad-banner-wrapper .container {
+.sponsor-section .container {
   display: flex;
   justify-content: center;
 }
 
-#header-ad-banner {
+#promo-panel {
   width: 100%;
   max-width: 468px;
 }
 
-/* 広告バナーのマージン調整（affiliate.css上書き） */
-#header-ad-banner .affiliate-banner {
+/* バナーのマージン調整（affiliate.css上書き） */
+#promo-panel .affiliate-banner {
   margin-top: 0;
   padding-top: 0;
   border-top: none;

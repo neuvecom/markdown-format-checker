@@ -35,10 +35,10 @@
     </div>
   </header>
 
-  <!-- 広告バナー -->
-  <div class="ad-banner-wrapper">
+  <!-- スポンサーセクション -->
+  <div class="sponsor-section">
     <div class="container">
-      <div id="header-ad-banner"></div>
+      <div id="promo-panel"></div>
     </div>
   </div>
 
@@ -321,9 +321,9 @@ npm install<br>
       });
 
       // ヘッダー下バナーを表示
-      const headerAdContainer = document.getElementById('header-ad-banner');
-      if (headerAdContainer) {
-        bannerManager.render(headerAdContainer, 'header');
+      const promoContainer = document.getElementById('promo-panel');
+      if (promoContainer) {
+        bannerManager.render(promoContainer, 'header');
       }
     });
   </script>
