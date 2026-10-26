@@ -7,8 +7,6 @@
   <meta name="keywords" content="VS Code, Markdown, 拡張機能, フォーマットチェッカー, テーブル">
   <title>Markdown Format Checker - VS Code拡張機能</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="neuvecom-common/css/affiliate.css">
-  <link rel="stylesheet" href="neuvecom-common/css/fallback.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -34,13 +32,6 @@
       </div>
     </div>
   </header>
-
-  <!-- スポンサーセクション -->
-  <div class="sponsor-section">
-    <div class="container">
-      <div id="promo-panel"></div>
-    </div>
-  </div>
 
   <main>
     <section class="hero">
@@ -294,6 +285,11 @@ npm install<br>
 
   <footer class="footer">
     <div class="container">
+      <div class="footer-kofi">
+        <kofi-banner user="otasuke">
+          <a href="https://ko-fi.com/otasuke" target="_blank" rel="noopener">Ko-fi で制作者を支援する</a>
+        </kofi-banner>
+      </div>
       <div class="footer-content">
         <div class="footer-left">
           <p class="footer-text">&copy; 2025 Markdown Format Checker. MIT License.</p>
@@ -307,25 +303,7 @@ npm install<br>
     </div>
   </footer>
 
-  <!-- 広告バナースクリプト -->
-  <script src="neuvecom-common/js/affiliate-lite.js"></script>
-  <script src="neuvecom-common/js/adblock-detector.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // 広告バナーマネージャーを初期化
-      const bannerManager = new NeuvecomAffiliateBanner({
-        sid: '3757792',
-        storageKeyPrefix: 'markdown-format-checker',
-        configPath: '/data/affiliates.yaml',
-        fallbackImagesPath: '/img/'
-      });
-
-      // ヘッダー下バナーを表示
-      const promoContainer = document.getElementById('promo-panel');
-      if (promoContainer) {
-        bannerManager.render(promoContainer, 'header');
-      }
-    });
-  </script>
+  <!-- Ko-fi 支援バナー（neuvecom/kofi-banner） -->
+  <script src="https://cdn.jsdelivr.net/gh/neuvecom/kofi-banner@v1.0.0/kofi-banner.js" defer></script>
 </body>
 </html>
