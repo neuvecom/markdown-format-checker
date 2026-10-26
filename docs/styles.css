@@ -143,32 +143,6 @@ body {
 }
 
 /* ========================================
-   スポンサーセクション
-   ======================================== */
-.sponsor-section {
-  padding: var(--spacing-md) 0;
-  background-color: var(--color-bg-secondary);
-  border-bottom: 1px solid var(--color-border);
-}
-
-.sponsor-section .container {
-  display: flex;
-  justify-content: center;
-}
-
-#promo-panel {
-  width: 100%;
-  max-width: 468px;
-}
-
-/* バナーのマージン調整（affiliate.css上書き） */
-#promo-panel .affiliate-banner {
-  margin-top: 0;
-  padding-top: 0;
-  border-top: none;
-}
-
-/* ========================================
    ヒーローセクション
    ======================================== */
 .hero {
@@ -666,6 +640,11 @@ body {
   padding: var(--spacing-xl) 0;
   background-color: var(--color-code-bg);
   color: var(--color-text-tertiary);
+}
+
+.footer-kofi {
+  max-width: 560px;
+  margin: 0 auto var(--spacing-lg);
 }
 
 .footer-content {
